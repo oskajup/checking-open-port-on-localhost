@@ -20,7 +20,7 @@ def scan_port(target, port):
         s.close()
 
 def send_alert(target, open_ports):
-    if not WEBHOOK_URL or "TWOJ_WEBHOOK" in WEBHOOK_URL:
+    if not WEBHOOK_URL or "Your_WEBHOOK" in WEBHOOK_URL: # paste your discord WEBHOOK 
         return
     
     payload = {
